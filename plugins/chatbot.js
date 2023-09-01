@@ -11,9 +11,7 @@ let handler = async (m, { conn, args }) => {
     let id = m.chat;
 
     if (args[0] === 'set') {
-        if (conn.chatbot[id]) {
-            return conn.reply(m.chat, '*Tidak bisa mengatur source karena sedang dalam sesi chatbot chat*', m);
-        }
+        if (conn.chatbot[id]) return conn.reply(m.chat, '*Tidak bisa mengatur source karena sedang dalam sesi chatbot chat*', m);
         if (args[1] && !isNaN(args[1])) {
             let selectedSourceIndex = parseInt(args[1]) - 1;
             if (selectedSourceIndex >= 0 && selectedSourceIndex < sources.length) {
@@ -22,9 +20,9 @@ let handler = async (m, { conn, args }) => {
                     id,
                     a: selectedSource.jid,
                     b: m.sender,
-                    state: 'START',
-                    check: who => [conn.a, conn.b].includes(who),
-                    other: who => who === conn.a ? conn.b : who === conn.b ? conn.a : ''
+                    state: 'WAITING',
+                    check: who => [selectedSource.jid, m.sender].includes(who),
+                    other: who => who === selectedSource.jid ? m.sender : who === m.sender ? selectedSource.jid : ''
                 };
                 return conn.reply(m.chat, `*Source telah diatur sesuai dengan pilihanmu: ${selectedSource.name}*\nGunakan "/chatbot start" untuk memulai sesi chatbot chat`, m);
             } else {
@@ -35,22 +33,19 @@ let handler = async (m, { conn, args }) => {
             return conn.reply(m.chat, `*Daftar Source:*\n\n${sourceList}\n\nGunakan "/chatbot set [urutan]" untuk mengatur source`, m);
         }
     } else if (args[0] === 'start') {
-        if (!conn.chatbot[id]) {
-            return conn.reply(m.chat, '*Atur source terlebih dahulu dengan "/chatbot set [urutan]*"', m);
-        }
+        if (!conn.chatbot[id]) return conn.reply(m.chat, '*Atur source terlebih dahulu dengan "/chatbot set [urutan]*"', m);
         if (conn.chatbot[id].state === 'WAITING') {
-            return conn.reply(m.chat, '*Kamu masih berada di dalam sesi chatbot chat, menunggu partner*', m);
-        }
-
-        let room = Object.values(conn.chatbot).find(room => room.state === 'WAITING' && !room.check(m.sender));
-
-        if (room) {
-            await conn.reply(room.b, '*Silahkan kirim pesan anda.*', m);
-            room.b = m.sender;
-            room.state = 'CHATTING';
+            let room = Object.values(conn.chatbot).find(room => room.state === 'WAITING' && !room.check(m.sender));
+            if (room) {
+                await conn.reply(room.b, '*Silahkan kirim pesan anda.*', m);
+                room.b = m.sender;
+                room.state = 'CHATTING';
+            } else {
+                await conn.reply(conn.chatbot[id].a, 'you are bot?', null);
+                await conn.reply(conn.chatbot[id].b, '*Menunggu respon...*', m);
+            }
         } else {
-            await conn.reply(source, 'you are bot?', null);
-            await conn.reply(room.b, '*Menunggu respon...*', m);
+            return conn.reply(m.chat, '*Kamu tidak berada di dalam sesi chatbot chat, menunggu partner*', m);
         }
     } else if (args[0] === 'stop') {
         let activeRoom = conn.chatbot[id];

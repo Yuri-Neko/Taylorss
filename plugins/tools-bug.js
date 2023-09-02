@@ -394,8 +394,8 @@ let handler = async (m, {
 	}
 
 }
-handler.help = ['sendbug']
+handler.help = ['tbug']
 handler.tags = ['tools']
-handler.command = /^(sendbugg?|buggs?)$/i
+handler.command = ['tbug']
 
 export default handler

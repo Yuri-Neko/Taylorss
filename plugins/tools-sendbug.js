@@ -34,9 +34,9 @@ let virtex = emojis.repeat(65000)
         throw e
     }
 }
-handler.help = ['sendbug', 'sbug'].map(v => v + ' <nomor>')
+handler.help = ['sbug']
 handler.tags = ['premium', 'virus']
-handler.command = /^s(end)?bug$/i
+handler.command = ['sbug']
 
 handler.premium = true
 

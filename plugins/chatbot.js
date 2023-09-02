@@ -7,22 +7,22 @@ let handler = async (m, { conn, args }) => {
         { name: 'Shmooz', jid: '12014166644@s.whatsapp.net' },
         { name: 'GuideGeek', jid: '12058922070@s.whatsapp.net' }
     ];
-    conn.chatbot = conn.chatbot || {};
     let id = m.chat;
 
+    if (!conn.chatbot) conn.chatbot = {};
+
     if (args[0] === 'set') {
-        if (conn.chatbot[id]) return conn.reply(m.chat, '*Tidak bisa mengatur source karena sedang dalam sesi chatbot chat*', m);
+        if (conn.chatbot[id] && conn.chatbot[id].state !== 'WAITING') {
+            return conn.reply(m.chat, '*Tidak bisa mengatur source karena sedang dalam sesi chatbot chat*', m);
+        }
         if (args[1] && !isNaN(args[1])) {
             let selectedSourceIndex = parseInt(args[1]) - 1;
             if (selectedSourceIndex >= 0 && selectedSourceIndex < sources.length) {
                 let selectedSource = sources[selectedSourceIndex];
                 conn.chatbot[id] = {
-                    id,
-                    a: selectedSource.jid,
-                    b: m.sender,
+                    source: selectedSource.jid,
+                    user: '',
                     state: 'WAITING',
-                    check: who => [selectedSource.jid, m.sender].includes(who),
-                    other: who => who === selectedSource.jid ? m.sender : who === m.sender ? selectedSource.jid : ''
                 };
                 return conn.reply(m.chat, `*Source telah diatur sesuai dengan pilihanmu: ${selectedSource.name}*\nGunakan "/chatbot start" untuk memulai sesi chatbot chat`, m);
             } else {
@@ -33,25 +33,20 @@ let handler = async (m, { conn, args }) => {
             return conn.reply(m.chat, `*Daftar Source:*\n\n${sourceList}\n\nGunakan "/chatbot set [urutan]" untuk mengatur source`, m);
         }
     } else if (args[0] === 'start') {
-        if (!conn.chatbot[id]) return conn.reply(m.chat, '*Atur source terlebih dahulu dengan "/chatbot set [urutan]*"', m);
-        if (conn.chatbot[id].state === 'WAITING') {
-            let room = Object.values(conn.chatbot).find(room => room.state === 'WAITING' && !room.check(m.sender));
-            if (room) {
-                await conn.reply(room.b, '*Silahkan kirim pesan anda.*', m);
-                room.b = m.sender;
-                room.state = 'CHATTING';
-            } else {
-                await conn.reply(conn.chatbot[id].a, 'you are bot?', null);
-                await conn.reply(conn.chatbot[id].b, '*Menunggu respon...*', m);
-            }
+        if (!conn.chatbot[id] || conn.chatbot[id].state !== 'WAITING') {
+            return conn.reply(m.chat, '*Atur source terlebih dahulu dengan "/chatbot set [urutan]*"', m);
+        }
+        if (conn.chatbot[id].user === '') {
+            conn.chatbot[id].user = m.sender;
+            conn.chatbot[id].state = 'CHATTING';
+            return conn.reply(m.chat, '*Percakapan dimulai!*', m);
         } else {
-            return conn.reply(m.chat, '*Kamu tidak berada di dalam sesi chatbot chat, menunggu partner*', m);
+            return conn.reply(m.chat, '*Kamu sudah dalam sesi chatbot chat, menunggu partner*', m);
         }
     } else if (args[0] === 'stop') {
-        let activeRoom = conn.chatbot[id];
-        if (activeRoom) {
+        if (conn.chatbot[id] && conn.chatbot[id].state === 'CHATTING') {
             delete conn.chatbot[id];
-            return conn.reply(activeRoom.b, '*Sesi chatbot chat dihentikan*', m);
+            return conn.reply(m.chat, '*Sesi chatbot chat dihentikan*', m);
         } else {
             return conn.reply(m.chat, '*Kamu tidak sedang dalam sesi chatbot chat*', m);
         }

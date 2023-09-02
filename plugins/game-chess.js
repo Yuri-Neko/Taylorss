@@ -18,7 +18,7 @@ conn.chess = conn.chess ? conn.chess : {}
   }
   if (feature === 'create') {
     if (!gameData) {
-      chessData.gameData = { status: 'waiting', players: [] };
+      chessData.gameData = { status: 'waiting', players: [], first: m.sender };
       return conn.reply(m.chat, '🎮 *Permainan catur dimulai.*\nMenunggu pemain lain untuk bergabung.', m);
     } else {
       return conn.reply(m.chat, '⚠️ *Permainan sudah dimulai.*', m);
@@ -45,6 +45,9 @@ conn.chess = conn.chess ? conn.chess : {}
       return conn.reply(m.chat, '🙋‍♂️ *Anda telah bergabung dalam permainan catur.*\nMenunggu pemain lain untuk bergabung.', m);
     }
   } else if (feature === 'start') {
+  if (!gameData.first.includes(m.sender)) {
+      return conn.reply(m.chat, '⚠️ *Tidak dapat memulai permainan. Tunggu hingga dua pemain bergabung.*', m);
+    }
     if (gameData.status !== 'ready') {
       return conn.reply(m.chat, '⚠️ *Tidak dapat memulai permainan. Tunggu hingga dua pemain bergabung.*', m);
     }

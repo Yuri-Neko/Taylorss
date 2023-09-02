@@ -46,7 +46,7 @@ conn.chess = conn.chess ? conn.chess : {}
     }
   } else if (feature === 'start') {
   if (!gameData.first.includes(m.sender)) {
-      return conn.reply(m.chat, '⚠️ *Tidak dapat memulai permainan. Tunggu hingga dua pemain bergabung.*', m);
+      return conn.reply(m.chat, '⚠️ *Kamu tidak dapat memulai permainan. Tunggu yang membuat sesi.*', m);
     }
     if (gameData.status !== 'ready') {
       return conn.reply(m.chat, '⚠️ *Tidak dapat memulai permainan. Tunggu hingga dua pemain bergabung.*', m);

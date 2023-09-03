@@ -1,5 +1,7 @@
 const handler = async (m, { conn, usedPrefix, args }) => {
-  let groups = Object.values(await conn.groupFetchAllParticipating());
+const groups = Object.keys(conn.chats)
+  .filter(key => key.endsWith('@g.us'))
+  .map(key => conn.chats[key]);
 
   if (args.length === 0) {
     // Menampilkan daftar nama grup dengan urutan

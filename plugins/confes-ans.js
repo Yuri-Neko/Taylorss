@@ -19,7 +19,7 @@ handler.all = async function (m) {
 	let mf = Object.values(this.confess).find(v => v.status === false && v.penerima == m.sender)
 	if (!mf) return !0
 	console.log({ text: m.text })
-	if (mf && (m.text === 'Balas Pesan' || m.text === '') && m.quoted?.mtype == 'buttonsMessage') return m.reply("Silahkan kirim pesan balasan kamu.")
+	if (mf && (m.text === 'balas' || m.text === 'Balas' || m.text === '') && m.quoted?.mtype == 'extendedTextMessage') return m.reply("Silahkan kirim pesan balasan kamu.")
 	
 	let txt = `Hai kak @${mf.dari.split('@')[0]}, kamu menerima balasan nih.\n\nPesan yang kamu kirim sebelumnya:\n${mf.pesan}\n\nPesan balasannya:\n${m.text}\n`.trim();
 	await this.reply(mf.dari, txt, null).then(() => {

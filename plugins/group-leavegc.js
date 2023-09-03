@@ -7,7 +7,9 @@ let handler = async (m, { conn, usedPrefix, text, command, args, isOwner, isAdmi
         }
         await m.reply('Berhasil!')
     }
-	let groups = Object.values(await conn.groupFetchAllParticipating())
+	let groups = Object.keys(conn.chats)
+  .filter(key => key.endsWith('@g.us'))
+  .map(key => conn.chats[key]);
     let listSections = []
 	Object.keys(groups).map((i, index) => {
 	listSections.push([++index + ' ' + cmenub + ' ' + groups[i].subject, [

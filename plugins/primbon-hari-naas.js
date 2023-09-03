@@ -14,9 +14,12 @@ if (args.length >= 1) {
 } else return m.reply("Masukkan pesan!")
 await m.reply(wait)
 try {
-  const primbonHariNaas = await primbon.primbon_hari_naas(text.split("|")[0], text.split("|")[1], text.split("|")[2]);
+  const inputText = text.split("|");
 
-const caption = `
+  if (inputText.length === 3 && inputText.every(input => input.trim() !== '')) {
+    const primbonHariNaas = await primbon.primbon_hari_naas(inputText[0], inputText[1], inputText[2]);
+
+    const caption = `
 === Primbon Hari Naas ===
 Hari Lahir Anda: ${primbonHariNaas.message.hari_lahir}
 Tanggal Lahir: ${primbonHariNaas.message.tgl_lahir}
@@ -29,11 +32,14 @@ Info:
 ${primbonHariNaas.message.info}
 `;
 
-await m.reply(caption);
-
-} catch (e) {
-  console.error("Error occurred during conversion:", error)
-  await m.reply("Terjadi kesalahan!")
+    await m.reply(caption);
+  } else {
+    console.error("Mohon pastikan semua input teks diisi. Total 3 input diperlukan.");
+    await m.reply("Mohon pastikan semua input teks diisi. Total 3 input diperlukan.");
+  }
+} catch (error) {
+  console.error("Error occurred during conversion:", error);
+  await m.reply("Terjadi kesalahan!");
 }
 
 }

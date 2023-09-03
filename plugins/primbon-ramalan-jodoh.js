@@ -14,9 +14,15 @@ if (args.length >= 1) {
 } else return m.reply("Masukkan pesan!")
 await m.reply(wait)
 try {
-  const jodoh = await primbon.ramalan_jodoh(text.split("|")[0], text.split("|")[1], text.split("|")[2], text.split("|")[3], text.split("|")[4], text.split("|")[5], text.split("|")[6], text.split("|")[7]);
+  const inputText = text.split("|");
 
-const caption = `
+  if (inputText.length === 8 && inputText.every(input => input.trim() !== '')) {
+    const jodoh = await primbon.ramalan_jodoh(
+      inputText[0], inputText[1], inputText[2], inputText[3],
+      inputText[4], inputText[5], inputText[6], inputText[7]
+    );
+
+    const caption = `
 === Ramalan Jodoh ===
 Nama Anda: ${jodoh.message.nama_anda.nama}
 Tanggal Lahir Anda: ${jodoh.message.nama_anda.tgl_lahir}
@@ -26,10 +32,14 @@ Hasil Ramalan: ${jodoh.message.result}
 Catatan: ${jodoh.message.catatan}
 `;
 
-await m.reply(caption);
-} catch (e) {
-  console.error("Error occurred during conversion:", error)
-  await m.reply("Terjadi kesalahan!")
+    await m.reply(caption);
+  } else {
+    console.error("Mohon pastikan semua input teks diisi. Total 8 input diperlukan.");
+    await m.reply("Mohon pastikan semua input teks diisi. Total 8 input diperlukan.");
+  }
+} catch (error) {
+  console.error("Error occurred during conversion:", error);
+  await m.reply("Terjadi kesalahan!");
 }
 
 }

@@ -14,9 +14,12 @@ if (args.length >= 1) {
 } else return m.reply("Masukkan pesan!")
 await m.reply(wait)
 try {
-  const hariSangarTaliwangke = await primbon.hari_sangar_taliwangke(text.split("|")[0], text.split("|")[1], text.split("|")[2]);
+  const inputText = text.split("|");
 
-const caption = `
+  if (inputText.length === 3 && inputText.every(input => input.trim() !== '')) {
+    const hariSangarTaliwangke = await primbon.hari_sangar_taliwangke(inputText[0], inputText[1], inputText[2]);
+
+    const caption = `
 === Primbon Hari Sangar Taliwangke ===
 Tanggal Lahir: ${hariSangarTaliwangke.message.tgl_lahir}
 Result: ${hariSangarTaliwangke.message.result}
@@ -28,11 +31,14 @@ Catatan:
 ${hariSangarTaliwangke.message.catatan}
 `;
 
-await m.reply(caption);
-
-} catch (e) {
-  console.error("Error occurred during conversion:", error)
-  await m.reply("Terjadi kesalahan!")
+    await m.reply(caption);
+  } else {
+    console.error("Mohon pastikan semua input teks diisi. Total 3 input diperlukan.");
+    await m.reply("Mohon pastikan semua input teks diisi. Total 3 input diperlukan.");
+  }
+} catch (error) {
+  console.error("Error occurred during conversion:", error);
+  await m.reply("Terjadi kesalahan!");
 }
 
 }

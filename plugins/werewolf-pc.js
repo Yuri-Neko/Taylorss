@@ -1,6 +1,6 @@
 import {
     emoji_role,
-    sesi,
+    sesi: getSesi,
     playerOnGame,
     playerOnRoom,
     playerExit,

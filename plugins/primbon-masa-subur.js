@@ -14,19 +14,25 @@ if (args.length >= 1) {
 } else return m.reply("Masukkan pesan!")
 await m.reply(wait)
 try {
-  const masaSubur = await primbon.masa_subur(text.split("|")[0], text.split("|")[1], text.split("|")[2], text.split("|")[3]);
+  const inputText = text.split("|");
 
-const caption = `
+  if (inputText.length === 4 && inputText.every(input => input.trim() !== '')) {
+    const masaSubur = await primbon.masa_subur(inputText[0], inputText[1], inputText[2], inputText[3]);
+
+    const caption = `
 === Kalkulator Masa Subur ===
 Hasil: ${masaSubur.message.result}
 Catatan: ${masaSubur.message.catatan}
 `;
 
-await m.reply(caption);
-
-} catch (e) {
-  console.error("Error occurred during conversion:", error)
-  await m.reply("Terjadi kesalahan!")
+    await m.reply(caption);
+  } else {
+    console.error("Mohon pastikan semua input teks diisi. Total 4 input diperlukan.");
+    await m.reply("Mohon pastikan semua input teks diisi. Total 4 input diperlukan.");
+  }
+} catch (error) {
+  console.error("Error occurred during conversion:", error);
+  await m.reply("Terjadi kesalahan!");
 }
 
 }

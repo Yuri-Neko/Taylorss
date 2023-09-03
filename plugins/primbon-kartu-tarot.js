@@ -14,9 +14,12 @@ if (args.length >= 1) {
 } else return m.reply("Masukkan pesan!")
 await m.reply(wait)
 try {
-  const artiKartuTarot = await primbon.arti_kartu_tarot(text.split("|")[0], text.split("|")[1], text.split("|")[2]);
+  const inputText = text.split("|");
 
-const caption = `
+  if (inputText.length === 3 && inputText.every(input => input.trim() !== '')) {
+    const artiKartuTarot = await primbon.arti_kartu_tarot(inputText[0], inputText[1], inputText[2]);
+
+    const caption = `
 === Arti Kartu Tarot ===
 Tanggal Lahir: ${artiKartuTarot.message.tgl_lahir}
 Simbol Tarot: ${artiKartuTarot.message.simbol_tarot}
@@ -24,11 +27,14 @@ Arti: ${artiKartuTarot.message.arti}
 Catatan: ${artiKartuTarot.message.catatan}
 `;
 
-await m.reply(caption);
-
-} catch (e) {
-  console.error("Error occurred during conversion:", error)
-  await m.reply("Terjadi kesalahan!")
+    await m.reply(caption);
+  } else {
+    console.error("Mohon pastikan semua input teks diisi. Total 3 input diperlukan.");
+    await m.reply("Mohon pastikan semua input teks diisi. Total 3 input diperlukan.");
+  }
+} catch (error) {
+  console.error("Error occurred during conversion:", error);
+  await m.reply("Terjadi kesalahan!");
 }
 
 }

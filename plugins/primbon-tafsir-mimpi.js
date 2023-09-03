@@ -14,18 +14,25 @@ if (args.length >= 1) {
 } else return m.reply("Masukkan pesan!")
 await m.reply(wait)
 try {
-  const tafsir = await primbon.tafsir_mimpi(text);
+  const inputText = text.trim();
 
-const caption = `
+  if (inputText !== '') {
+    const tafsir = await primbon.tafsir_mimpi(inputText);
+
+    const caption = `
 Mimpi: ${tafsir.message.mimpi}
 Arti: ${tafsir.message.arti}
 Solusi: ${tafsir.message.solusi}
 `;
 
-await m.reply(caption);
-} catch (e) {
-  console.error("Error occurred during conversion:", error)
-  await m.reply("Terjadi kesalahan!")
+    await m.reply(caption);
+  } else {
+    console.error("Mohon pastikan Anda telah mengisi mimpi Anda.");
+    await m.reply("Mohon pastikan Anda telah mengisi mimpi Anda.");
+  }
+} catch (error) {
+  console.error("Error occurred during conversion:", error);
+  await m.reply("Terjadi kesalahan!");
 }
 
 }

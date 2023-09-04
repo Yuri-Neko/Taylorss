@@ -9,36 +9,9 @@ let handler = async (m, {
     usedPrefix,
     command
 }) => {
-    const loadingEmojis = ["🕛", "🕑", "🕓", "🕕", "🕗", "🕙"]; // Emojis jam
-
 await conn.sendMessage(m.chat, {
     react: {
-        text: loadingEmojis[0],
-        key: m.key,
-    }
-});
-
-// Animasi loading dengan emoji jam
-let currentIndex = 0;
-const loadingInterval = setInterval(() => {
-    currentIndex = (currentIndex + 1) % loadingEmojis.length;
-    conn.sendMessage(m.chat, {
-    react: {
-        text: loadingEmojis[currentIndex],
-        key: m.key,
-    }
-});
-}, 500); // Ganti angka ini untuk mengatur kecepatan animasi
-
-// Simulasi waktu tunda (misalnya, 3 detik) sebelum menghentikan animasi
-await new Promise(resolve => setTimeout(resolve, 3000));
-
-// Menghentikan animasi dan mengganti emoji dengan emoji sukses
-clearInterval(loadingInterval);
-const successEmoji = "✅";
-await conn.sendMessage(m.chat, {
-    react: {
-        text: successEmoji,
+        text: "⏳",
         key: m.key,
     }
 });
@@ -126,17 +99,17 @@ await conn.sendMessage(m.chat, {
         logo
     ].getRandom()
 
-    const cap = `👋 Selamat datang di dashboard bot kami!\n\n- Kami berharap Anda akan menikmati pengalaman berinteraksi dengan bot kami yang ramah dan intuitif.${readMore}\n\n- Kami telah menyertakan berbagai fitur yang dapat membantu Anda mengelola dan meningkatkan kinerja bot Anda.\n\n- Kami berharap Anda akan menikmati menggunakan dashboard bot kami dan semoga Anda mendapatkan manfaat dari fitur-fitur yang kami tawarkan.\n\n[ LIST MENU ]\n${usedPrefix}menulist\n${usedPrefix}allmenu\n\n`.trim().replace(/\n\s*/g, '\n');
+    const cap = `*👋 Selamat datang di dashboard bot kami*!\n\n- Kami berharap Anda akan menikmati pengalaman berinteraksi dengan bot kami yang ramah dan intuitif.${readMore}\n\n- Kami telah menyertakan berbagai fitur yang dapat membantu Anda mengelola dan meningkatkan kinerja bot Anda.\n\n- Kami berharap Anda akan menikmati menggunakan dashboard bot kami dan semoga Anda mendapatkan manfaat dari fitur-fitur yang kami tawarkan.\n\n*[ LIST MENU ]*\n${usedPrefix}menulist\n${usedPrefix}allmenu\n\n`.trim().replace(/\n\s*/g, '\n');
 
-        let mthumb = await (await conn.getFile(logo)).data
-        let msg = await generateWAMessageFromContent(m.chat, { scheduledCallCreationMessage: {
-	callType: 2,
-	scheduledTimestampMs: 0,
-	title: cap }
-	}, {})
-        await conn.relayMessage(m.chat, msg.message, {})
-        await conn.sendPresenceUpdate('recording', m.chat)
-        await conn.sendFile(m.chat, vn, '', null, m, true, { ptt: true })
+        await conn.reply(m.chat, cap, m, adReply);
+        await conn.sendPresenceUpdate('recording', m.chat);
+        await conn.sendFile(m.chat, vn, '', null, m, true, { ptt: true });
+        await conn.sendMessage(m.chat, {
+    react: {
+        text: "✅",
+        key: m.key,
+    }
+});
     
 }
 handler.help = ["menu", "help", "?"]

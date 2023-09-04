@@ -41,19 +41,29 @@ let handler = async (m, {
     }
     if (command == "owner") {
         try {
-            let sentMsg = await conn.sendContactArray(m.chat, [
-                [nomorown, await conn.getName(nomorown + "@s.whatsapp.net"), "👑 Developer Bot ", "🚫 Dont call me 🥺", "wudysoft@gmail.com", "🇮🇩 Indonesia", "🚀 https://aygemuy.github.io/", "👤 Gada pawang nih senggol dong 😔"],
-                [conn.user.jid.split("@")[0], await conn.getName(conn.user.jid), "🔥 Bot WhatsApp 🐣", "📵 Dont spam/call me 😢", "Nothing", "🇮🇩 Indonesia", "🚀 https://s.id/Cerdasin62/", "🤖 Hanya bot biasa yang kadang suka eror ☺"]
-            ], m)
-            await conn.reply(m.chat, `Halo kak @${m.sender.split("@")[0]} itu nomor team developerku, jangan di apa-apain ya kak😖`, sentMsg, {
-                mentions: [m.sender]
-            })
-        } catch {
-            let sentMsg = await conn.sendContact(m.chat, nomorown, await conn.getName(nomorown + "@s.whatsapp.net"), m)
-            await conn.reply(m.chat, `Halo kak @${m.sender.split("@")[0]} itu nomor team developerku, jangan di apa-apain ya kak😖`, sentMsg, {
-                mentions: [m.sender]
-            })
-        }
+    const ownerPromises = global.owner.map(async (item, index) => [
+        item[0],
+        (await conn.getName(item[0] + "@s.whatsapp.net")) || "Tidak diketahui",
+        "👑 Owner",
+        ((await conn.fetchStatus(item[0] + "@s.whatsapp.net")).status) || "Tidak diketahui",
+        "wudysoft@gmail.com",
+        "🇮🇩 Indonesia",
+        "🚀 https://aygemuy.github.io/",
+        "👤 Gada pawang nih senggol dong 😔"
+    ]);
+
+    const resultArray = await Promise.all(ownerPromises);
+    let sentMsg = await conn.sendContactArray(m.chat, resultArray, m);
+    await conn.reply(m.chat, `Halo kak @${m.sender.split("@")[0]} itu nomor team developerku, jangan di apa-apain ya kak😖`, sentMsg, {
+        mentions: [m.sender]
+    });
+} catch {
+    let sentMsg = await conn.sendContact(m.chat, nomorown, await conn.getName(nomorown + "@s.whatsapp.net"), m);
+    await conn.reply(m.chat, `Halo kak @${m.sender.split("@")[0]} itu nomor team developerku, jangan di apa-apain ya kak😖`, sentMsg, {
+        mentions: [m.sender]
+    });
+}
+
     }
 }
 handler.help = ["owner", "creator", "pengembang"]

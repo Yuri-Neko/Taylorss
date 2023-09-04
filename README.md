@@ -2,7 +2,6 @@
 <p align="center">
 <img src="https://github.com/AyGemuy.png?size=500" width="75%" style="margin-left: auto;margin-right: auto;display: block;">
 
-
 </p>
 <h1 align="center">Taylors</h1>
 <p align="center">
@@ -24,22 +23,6 @@
 <a href="https://github.com/AyGemuy/Taylors/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/AyGemuy/Taylors?label=PullRequest&color=success&style=flat-square"></a>
 <a href="https://github.com/AyGemuy/Taylors/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/AyGemuy/Taylors?label=PullRequest&color=red&style=flat-square"></a>
 
----------
-## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
-  <a href="https://wa.me/6282195322106">
-    <img align="left" alt="Wudysoft | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
-  </a> &nbsp;&nbsp;
-  <a href="https://tiktok.com/@apabengmaukubilanf">
-    <img align="left" alt="Wudysoft | Titkok" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Tiktok.svg" />
-  </a> &nbsp;&nbsp;
-  <a href="https://instagram.com/wudysoft">
-    <img align="left" alt="Wudysoft | Instagram" width="24px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
-  </a> &nbsp;&nbsp;
-  <a href="mailto:wudysoft@mail.com">
-    <img align="left" alt="Wudysoft | Gmail" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Gmail.svg" />
-  </a> &nbsp;&nbsp;
----------
-
 ## ```Whatsapp``` <a href="https://wa.me/6282195322106"> <img align="left" alt="Wudysoft | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
 [![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285171216276) 
 [![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282195322106) 
@@ -52,7 +35,6 @@
 | **Fast Respon** |[✔️](https://github.com/AyGemuy/Taylors) |
 | **No Internet** |[✔️](https://github.com/AyGemuy/Taylors) |
 | **Simple** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Button template** |[✔️](https://github.com/AyGemuy/Taylors) |
 | **Multi Device** |[✔️](https://github.com/AyGemuy/Taylors) |
 ---------
 #### FITUR 📍
@@ -263,15 +245,6 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 * [`All Friends`](https://github.com/AyGemuy/Taylors)
 * [`All Contributors`](https://github.com/AyGemuy/Taylors)
 * [`All Creator Bot`](https://github.com/AyGemuy/Taylors)
-* [`Adiwajshing`](https://github.com/adiwajshing/Baileys)
-* [`Nurutomo`](https://github.com/nurutomo)
-* [`BochilGaming`](https://github.com/bochilgaming)
 
 ## ```Recode By 💌```
 [![Taylors](https://github.com/AyGemuy.png?size=100)](https://github.com/AyGemuy/Taylors)
-
-## ```Contributor 📣```
-* [`The.Sad.Boy01`](https://github.com/Kangsad01)
-* [`AmirulDev20`](https://github.com/amiruldev20)
-* [`Rasel Comel`](https://github.com/raselcomel)
-* [`Rominaru`](https://github.com/rominaru)

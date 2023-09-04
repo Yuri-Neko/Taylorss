@@ -4,32 +4,32 @@
 
 
 </p>
-<h1 align="center">HinataBot - MD</h1>
+<h1 align="center">Taylors</h1>
 <p align="center">
-  <a href="https://github.com/AyGemuy/HinataBot"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=HinataBot+Wudysoft+BOT+Multi+Device;Base+ori+by+BochilGaming;Recode+By+Wudysoft;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
+  <a href="https://github.com/AyGemuy/Taylors"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Taylors+Wudysoft+BOT+Multi+Device;Base+ori+by+BochilGaming;Recode+By+Wudysoft;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
 </p>
 
 <p align="center">
- <a href="#"><img title="HinataBot" src="https://img.shields.io/badge/HinataBot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+ <a href="#"><img title="Taylors" src="https://img.shields.io/badge/Taylors-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href=""><img title="Author" src="https://img.shields.io/badge/AUTHOR-Wudysoft-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
-<a href="https://github.com/AyGemuy/HinataBot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AyGemuy/HinataBot?label=Forks&color=blue&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/HinataBot/lwatchers"><img title="Watchers" src="https://img.shields.io/github/watchers/AyGemuy/HinataBot?label=Watchers&color=green&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/HinataBot/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/AyGemuy/HinataBot?label=Stars&color=yellow&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/HinataBot/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/AyGemuy/HinataBot?label=Contributors&color=blue&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/HinataBot/issues"><img title="Issues" src="https://img.shields.io/github/issues/AyGemuy/HinataBot?label=Issues&color=success&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/HinataBot/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/AyGemuy/HinataBot?label=Issues&color=red&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/HinataBot/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/AyGemuy/HinataBot?label=PullRequest&color=success&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/HinataBot/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/AyGemuy/HinataBot?label=PullRequest&color=red&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AyGemuy/Taylors?label=Forks&color=blue&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/lwatchers"><img title="Watchers" src="https://img.shields.io/github/watchers/AyGemuy/Taylors?label=Watchers&color=green&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/AyGemuy/Taylors?label=Stars&color=yellow&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/AyGemuy/Taylors?label=Contributors&color=blue&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/issues"><img title="Issues" src="https://img.shields.io/github/issues/AyGemuy/Taylors?label=Issues&color=success&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/AyGemuy/Taylors?label=Issues&color=red&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/AyGemuy/Taylors?label=PullRequest&color=success&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylors/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/AyGemuy/Taylors?label=PullRequest&color=red&style=flat-square"></a>
 
 ---------
 ## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
   <a href="https://wa.me/6282195322106">
     <img align="left" alt="Wudysoft | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
-  <a href="https://tiktok.com/@upload_file">
+  <a href="https://tiktok.com/@apabengmaukubilanf">
     <img align="left" alt="Wudysoft | Titkok" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Tiktok.svg" />
   </a> &nbsp;&nbsp;
   <a href="https://instagram.com/wudysoft">
@@ -49,35 +49,35 @@
 #### KELEBIHAN 📍
 | Kelebihan | Check |
 |--------|--------|
-| **Fast Respon** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **No Internet** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Simple** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Button template** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Multi Device** |[✔️](https://github.com/AyGemuy/HinataBot) |
+| **Fast Respon** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **No Internet** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Simple** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Button template** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Multi Device** |[✔️](https://github.com/AyGemuy/Taylors) |
 ---------
 #### FITUR 📍
 | Fitur | Check |
 |--------|--------|
-| **Downloader** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Internet** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Game Rpg** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Nsfw** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Sticker** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Game** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Kerang Ajaib** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Quotes** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Anime** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Premium** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Tools** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **Exec** |[✔️](https://github.com/AyGemuy/HinataBot) |
-| **React** |[✔️](https://github.com/AyGemuy/HinataBot) |
+| **Downloader** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Internet** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Game Rpg** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Nsfw** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Sticker** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Game** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Kerang Ajaib** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Quotes** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Anime** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Premium** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Tools** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Exec** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **React** |[✔️](https://github.com/AyGemuy/Taylors) |
 ---------
 
 ## `SETTING`
 
-- Owner Number [Here](https://github.com/AyGemuy/HinataBot)
-- Owner Name [Here](https://github.com/AyGemuy/HinataBot)
-- Bot Name [Here](https://github.com/AyGemuy/HinataBot)
+- Owner Number [Here](https://github.com/AyGemuy/Taylors/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L13C17-L13C17)
+- Owner Name [Here](https://github.com/AyGemuy/Taylors/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L60)
+- Bot Name [Here](https://github.com/AyGemuy/Taylors/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L59)
 ---------
 
 ## ```Heroku Buildpack```
@@ -99,13 +99,21 @@ $ pkg install git -y
 $ pkg install nodejs -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
-$ git clone https://github.com/AyGemuy/HinataBot/
-$ cd HinataBot-master
+$ git clone https://github.com/AyGemuy/Taylors/
+$ cd Taylors-master
 $ npm i 
 ```
 If error try using yarn instead of npm, see [here](https://github.com/kannachann/KannaBOT-MD#if-npm-install-failed--try--using-yarn-instead-of-npm)
 ```bash
 $ node .
+```
+
+## OPTIONS
+```bash
+$ node . --qr
+$ node . --mobile
+$ node . --pairing-code
+$ node . --singleauth
 ```
 
 #### If npm install failed, try using yarn instead of npm
@@ -136,14 +144,14 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 
 ---------
 
-[ INSTALLING NODEJS & HinataBot]
+[ INSTALLING NODEJS & Taylors]
 
 ```bash
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/AyGemuy/HinataBot/
-cd HinataBot-master
+git clone https://github.com/AyGemuy/Taylors/
+cd Taylors-master
 npm install
 npm update
 ```
@@ -158,8 +166,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/AyGemuy/HinataBot/
-cd HinataBot-master
+git clone https://github.com/AyGemuy/Taylors/
+cd Taylors-master
 npm install
 npm update
 ```
@@ -250,17 +258,17 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 
 
 ## ```Thanks to ✨```
-* [`Allah SWT`](https://github.com/AyGemuy/HinataBot)
-* [`My parents`](https://github.com/AyGemuy/HinataBot)
-* [`All Friends`](https://github.com/AyGemuy/HinataBot)
-* [`All Contributors`](https://github.com/AyGemuy/HinataBot)
-* [`All Creator Bot`](https://github.com/AyGemuy/HinataBot)
+* [`Allah SWT`](https://github.com/AyGemuy/Taylors)
+* [`My parents`](https://github.com/AyGemuy/Taylors)
+* [`All Friends`](https://github.com/AyGemuy/Taylors)
+* [`All Contributors`](https://github.com/AyGemuy/Taylors)
+* [`All Creator Bot`](https://github.com/AyGemuy/Taylors)
 * [`Adiwajshing`](https://github.com/adiwajshing/Baileys)
 * [`Nurutomo`](https://github.com/nurutomo)
 * [`BochilGaming`](https://github.com/bochilgaming)
 
 ## ```Recode By 💌```
-[![HinataBot](https://github.com/AyGemuy.png?size=100)](https://github.com/AyGemuy/HinataBot)
+[![Taylors](https://github.com/AyGemuy.png?size=100)](https://github.com/AyGemuy/Taylors)
 
 ## ```Contributor 📣```
 * [`The.Sad.Boy01`](https://github.com/Kangsad01)

@@ -96,6 +96,7 @@
         "lodash": "*",
         "lowdb": "^3.0.0",
         "mal-scraper": "*",
+        "megajs": "*",
         "midjourney-client": "*",
         "mime-types": "*",
         "moment-timezone": "*",

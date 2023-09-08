@@ -6,17 +6,20 @@ import {
 let limit = 80
 
 export async function before(m) {
-    const regex = /^https?:\/\/(www\.)?youtube\.com\/watch\?v=[a-zA-Z0-9_-]{11}$/;
-    let spas = "                "
-    if (regex.test(m.text)) {
+const regex = /^https?:\/\/(www\.)?youtube\.com\/watch\?v=[a-zA-Z0-9_-]{11}$/;
+const matches = (m.text.trim()).match(regex);
+const spas = "                ";
+if (!matches) return false;
+await m.reply(wait);
+
     try {
                 let q = "360p"
-        let v = m.text
+        let v = matches[0]
         const yt = await youtubedl(v).catch(async () => await youtubedlv2(v))
         const dl_url = await yt.video[q].download()
         const title = await yt.title
         const size = await yt.video[q].fileSizeH
-        await m.reply(wait)
+        
 
         if (size.split("MB")[0] >= limit) return m.reply(` ≡  *Youtube Downloader*\n\n▢ *⚖️Size* : ${size}\n▢ *🎞️quality* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
         let captvid = `
@@ -53,9 +56,6 @@ let doc = {
             } catch (e) {
                 await m.reply(eror)
             }
-    } else {
-        console.log('URL TikTok Tidak Valid');
-    }
-
+    
 }
 export const disabled = false

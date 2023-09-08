@@ -24,6 +24,18 @@ export async function before(m, { match }) {
             });
 
             await this.sendMessage(other, { text: sectionText }, { quoted: null });
+        } else if (m.message.buttonsMessage) {
+            const description = m.message.buttonsMessage.contentText;
+            const sections = m.message.buttonsMessage.buttons;
+            const more = String.fromCharCode(8206)
+            const readMore = more.repeat(4001)
+            let sectionText = `${description}\n\n`;
+                sectionText += `${readMore}\n`;
+                sections.forEach(row => {
+                    sectionText += `${row.buttonText.displayText}\n*Send*: ${row.buttonId}\n\n`;
+                });
+
+            await this.sendMessage(other, { text: sectionText }, { quoted: null });
         } else {
             await this.relayMessage(other, m.message, { messageId: m.id });
         }

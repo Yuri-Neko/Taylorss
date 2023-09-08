@@ -5,7 +5,9 @@ let handler = async (m, { conn, args }) => {
         { name: 'MobileGPT', jid: '27767346284@s.whatsapp.net' },
         { name: 'WizAI', jid: '4915151853491@s.whatsapp.net' },
         { name: 'Shmooz', jid: '12014166644@s.whatsapp.net' },
-        { name: 'GuideGeek', jid: '12058922070@s.whatsapp.net' }
+        { name: 'GuideGeek', jid: '12058922070@s.whatsapp.net' },
+        { name: 'Jinni', jid: '447457403599@s.whatsapp.net' },
+        { name: 'Santa Claus', jid: '15855398883@s.whatsapp.net' },
     ];
     let id = m.chat;
 

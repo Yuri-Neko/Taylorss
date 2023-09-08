@@ -414,8 +414,6 @@ function purgeSessionSB() {
     if (!existsSync(folderPath)) {
         mkdirSync(folderPath);
         conn.logger.info('\nFolder jadibot berhasil dibuat.');
-    } else {
-        conn.logger.error('\nFolder jadibot sudah ada.');
     }
     const listaDirectorios = readdirSync('./jadibot/');
     let SBprekey = [];
@@ -436,8 +434,6 @@ function purgeOldFiles() {
     if (!existsSync(folderPath)) {
         mkdirSync(folderPath);
         conn.logger.info('\nFolder jadibot berhasil dibuat.');
-    } else {
-        conn.logger.error('\nFolder jadibot sudah ada.');
     }
     const directories = ['./TaylorSession/', './jadibot/'];
     const oneHourAgo = Date.now() - (60 * 60 * 1000);

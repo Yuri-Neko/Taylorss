@@ -1,33 +1,28 @@
 import fetch from 'node-fetch';
-import gtts from 'node-gtts'
-import {
-    readFileSync,
-    unlinkSync
-} from 'fs'
-import {
-    join
-} from 'path'
-import fetch from 'node-fetch'
-const defaultLang = 'id'
+import gtts from 'node-gtts';
+import { readFileSync, unlinkSync } from 'fs';
+import { join } from 'path';
 import axios from 'axios';
 import translate from '@vitalets/google-translate-api';
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
-  apiKey: openaikey
-});
-const language = 'id'
+const defaultLang = 'id';
+const language = 'id';
 const sysmsg = `Akan bertindak seperti bot WhatsApp.`;
 
+const openai = new OpenAI({
+  apiKey: global.openaikey
+});
+
 const handler = async (m, { conn, text, usedPrefix, command }) => {
-  
-  if (!text) throw `*[❗] Masukkan pertanyaan untuk menggunakan perintah ini*\n\n*—◉ Contoh:*\n*◉ ${usedPrefix + command} Refleksi tentang Netflix La Casa de Papel 2022*\n*◉ ${usedPrefix + command} Kode JS untuk permainan kartu*`;
+  if (!text) throw `*Masukkan pertanyaan untuk menggunakan perintah ini*\n\n*Contoh:*\n*- ${usedPrefix + command} Refleksi tentang Netflix La Casa de Papel 2022*\n*- ${usedPrefix + command} Kode JS untuk permainan kartu*`;
 
   try {
     conn.sendPresenceUpdate('composing', m.chat);
-    const response = await getOpenAIChatCompletion(text, openaikey);
+    const response = await getOpenAIChatCompletion(text, global.openaikey);
+
     if (response == 'error' || response == '' || !response) {
-      throw `*[❗] Terjadi kesalahan dalam respons dari OpenAI. Cobalah lagi atau gunakan API lain.*`;
+      throw eror;
     }
 
     const audio = await tts(response, language);
@@ -38,7 +33,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       const response = await openai.chat.completions.create({ model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0 });
 
       if (response.data.choices[0].text == 'error' || response.data.choices[0].text == '' || !response.data.choices[0].text) {
-        throw `*[❗] Terjadi kesalahan dalam respons dari OpenAI. Cobalah lagi atau gunakan API lain.*`;
+        throw eror;
       }
 
       const audio = await tts(response.data.choices[0].text, language);
@@ -50,7 +45,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
         const json = await response.json();
 
         if (json.result == 'error' || json.result == '' || !json.result) {
-          throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+          throw eror;
         }
 
         const audio = await tts(json.result, language);
@@ -62,7 +57,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
           const json = await response.json();
 
           if (json.data == 'error' || json.data == '' || !json.data) {
-            throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+            throw eror;
           }
 
           const audio = await tts(json.data, language);
@@ -74,7 +69,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
             const json = await response.json();
 
             if (json.data == 'error' || json.data == '' || !json.data) {
-              throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+              throw eror;
             }
 
             const audio = await tts(json.data, language);
@@ -86,7 +81,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
               const json = await response.json();
 
               if (json.data == 'error' || json.data == '' || !json.data) {
-                throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+                throw eror;
               }
 
               const audio = await tts(json.data, language);
@@ -94,11 +89,11 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
             } catch (e) {
               try {
                 conn.sendPresenceUpdate('composing', m.chat);
-                const response = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkey}&text=${text}&user=${m.sender}`);
+                const response = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${global.lolkey}&text=${text}&user=${m.sender}`);
                 const json = await response.json();
 
                 if (json.result == 'error' || json.result == '' || !json.result) {
-                  throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+                  throw eror;
                 }
 
                 const json_result = await translate(`${json.result}`, { to: language, autoCorrect: true });
@@ -113,7 +108,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
                   const json = await response.json();
 
                   if (json.data == 'error' || json.data == '' || !json.data) {
-                    throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+                    throw eror;
                   }
 
                   const transLate = await translate(`${json.data}`, { to: language, autoCorrect: true });
@@ -128,7 +123,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
                     const json = await response.json();
 
                     if (json.respon == 'error' || json.respon == '' || !json.respon) {
-                      throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+                      throw eror;
                     }
 
                     const transLate = await translate(`${json.respon}`, { to: 'it', autoCorrect: true });
@@ -141,14 +136,14 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
                       const json = await response.json();
 
                       if (json.respon == 'error' || json.respon == '' || !json.respon) {
-                        throw `*[❗] Terjadi kesalahan dalam respons dari API. Cobalah lagi atau gunakan API lain.*`;
+                        throw eror;
                       }
 
                       const transLate = await translate(`${json.respon}`, { to: 'it', autoCorrect: true });
                       const audio = await tts(transLate.text, language);
                       await conn.sendMessage(m.chat, { audio: audio, fileName: 'response.mp3', mimetype: 'audio/mpeg', ptt: true }, { quoted: m });
                     } catch (e) {
-                      throw `*[❗] ${e.message}*\n\n*[❗] 𝙴𝚁𝚁𝙾𝚁*`;
+                      throw eror;
                     }
                   }
                 }

@@ -1,65 +1,65 @@
 
 <p align="center">
-<img src="https://github.com/AyGemuy.png?size=500" width="75%" style="margin-left: auto;margin-right: auto;display: block;">
+[![AyGemuy](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=500&w=300&h=300&fit=cover&mask=circle)](https://github.com/AyGemuy/Taylor)
 
 </p>
-<h1 align="center">Taylors</h1>
+<h1 align="center">Taylor</h1>
 <p align="center">
-  <a href="https://github.com/AyGemuy/Taylors"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Taylors+Wudysoft+BOT+Multi+Device;Base+ori+by+BochilGaming;Recode+By+Wudysoft;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
+  <a href="https://github.com/AyGemuy/Taylor"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Taylor+Wudysoft+BOT+Multi+Device;Base+ori+by+BochilGaming;Recode+By+Wudysoft;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
 </p>
 
 <p align="center">
- <a href="#"><img title="Taylors" src="https://img.shields.io/badge/Taylors-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+ <a href="#"><img title="Taylor" src="https://img.shields.io/badge/Taylor-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href=""><img title="Author" src="https://img.shields.io/badge/AUTHOR-Wudysoft-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
-<a href="https://github.com/AyGemuy/Taylors/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AyGemuy/Taylors?label=Forks&color=blue&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/Taylors/lwatchers"><img title="Watchers" src="https://img.shields.io/github/watchers/AyGemuy/Taylors?label=Watchers&color=green&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/Taylors/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/AyGemuy/Taylors?label=Stars&color=yellow&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/Taylors/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/AyGemuy/Taylors?label=Contributors&color=blue&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/Taylors/issues"><img title="Issues" src="https://img.shields.io/github/issues/AyGemuy/Taylors?label=Issues&color=success&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/Taylors/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/AyGemuy/Taylors?label=Issues&color=red&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/Taylors/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/AyGemuy/Taylors?label=PullRequest&color=success&style=flat-square"></a>
-<a href="https://github.com/AyGemuy/Taylors/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/AyGemuy/Taylors?label=PullRequest&color=red&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AyGemuy/Taylor?label=Forks&color=blue&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/lwatchers"><img title="Watchers" src="https://img.shields.io/github/watchers/AyGemuy/Taylor?label=Watchers&color=green&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/AyGemuy/Taylor?label=Stars&color=yellow&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/AyGemuy/Taylor?label=Contributors&color=blue&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/issues"><img title="Issues" src="https://img.shields.io/github/issues/AyGemuy/Taylor?label=Issues&color=success&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/AyGemuy/Taylor?label=Issues&color=red&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/AyGemuy/Taylor?label=PullRequest&color=success&style=flat-square"></a>
+<a href="https://github.com/AyGemuy/Taylor/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/AyGemuy/Taylor?label=PullRequest&color=red&style=flat-square"></a>
 
-## ```Whatsapp``` <a href="https://wa.me/6282195322106"> <img align="left" alt="Wudysoft | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
-[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285171216276) 
-[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282195322106) 
+## ```Whatsapp``` <a href="https://wa.me/212680448790">
+[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/212680448790) 
+[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/212680448790) 
 [![GROUP OFFICIAL](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/BAs2c2UeLE8AaI806UWUvI) 
 ---------
 
 #### KELEBIHAN 📍
 | Kelebihan | Check |
 |--------|--------|
-| **Fast Respon** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **No Internet** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Simple** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Multi Device** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Fast Respon** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **No Internet** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Simple** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Multi Device** |[✔️](https://github.com/AyGemuy/Taylor) |
 ---------
 #### FITUR 📍
 | Fitur | Check |
 |--------|--------|
-| **Downloader** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Internet** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Game Rpg** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Nsfw** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Sticker** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Game** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Kerang Ajaib** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Quotes** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Anime** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Premium** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Tools** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **Exec** |[✔️](https://github.com/AyGemuy/Taylors) |
-| **React** |[✔️](https://github.com/AyGemuy/Taylors) |
+| **Downloader** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Internet** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Game Rpg** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Nsfw** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Sticker** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Game** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Kerang Ajaib** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Quotes** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Anime** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Premium** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Tools** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **Exec** |[✔️](https://github.com/AyGemuy/Taylor) |
+| **React** |[✔️](https://github.com/AyGemuy/Taylor) |
 ---------
 
 ## `SETTING`
 
-- Owner Number [Here](https://github.com/AyGemuy/Taylors/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L13C17-L13C17)
-- Owner Name [Here](https://github.com/AyGemuy/Taylors/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L60)
-- Bot Name [Here](https://github.com/AyGemuy/Taylors/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L59)
+- Owner Number [Here](https://github.com/AyGemuy/Taylor/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L13C17-L13C17)
+- Owner Name [Here](https://github.com/AyGemuy/Taylor/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L60)
+- Bot Name [Here](https://github.com/AyGemuy/Taylor/blob/2b7ce09d6dc73134d34d0ccf970d0efc95901c97/config.js#L59)
 ---------
 
 ## ```Heroku Buildpack```
@@ -81,8 +81,8 @@ $ pkg install git -y
 $ pkg install nodejs -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
-$ git clone https://github.com/AyGemuy/Taylors/
-$ cd Taylors-master
+$ git clone https://github.com/AyGemuy/Taylor/
+$ cd Taylor-master
 $ npm i 
 ```
 If error try using yarn instead of npm, see [here](https://github.com/kannachann/KannaBOT-MD#if-npm-install-failed--try--using-yarn-instead-of-npm)
@@ -126,14 +126,14 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 
 ---------
 
-[ INSTALLING NODEJS & Taylors]
+[ INSTALLING NODEJS & Taylor]
 
 ```bash
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/AyGemuy/Taylors/
-cd Taylors-master
+git clone https://github.com/AyGemuy/Taylor/
+cd Taylor-master
 npm install
 npm update
 ```
@@ -148,8 +148,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/AyGemuy/Taylors/
-cd Taylors-master
+git clone https://github.com/AyGemuy/Taylor/
+cd Taylor-master
 npm install
 npm update
 ```
@@ -240,11 +240,11 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 
 
 ## ```Thanks to ✨```
-* [`Allah SWT`](https://github.com/AyGemuy/Taylors)
-* [`My parents`](https://github.com/AyGemuy/Taylors)
-* [`All Friends`](https://github.com/AyGemuy/Taylors)
-* [`All Contributors`](https://github.com/AyGemuy/Taylors)
-* [`All Creator Bot`](https://github.com/AyGemuy/Taylors)
+* [`Allah SWT`](https://github.com/AyGemuy/Taylor)
+* [`My parents`](https://github.com/AyGemuy/Taylor)
+* [`All Friends`](https://github.com/AyGemuy/Taylor)
+* [`All Contributors`](https://github.com/AyGemuy/Taylor)
+* [`All Creator Bot`](https://github.com/AyGemuy/Taylor)
 
 ## ```Recode By 💌```
-[![Taylors](https://github.com/AyGemuy.png?size=100)](https://github.com/AyGemuy/Taylors)
+[![Taylor](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=100&w=300&h=300&fit=cover&mask=circle)](https://github.com/AyGemuy)

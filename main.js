@@ -486,13 +486,13 @@ async function connectionUpdate(update) {
    ℹ️ *Bot Info:*
    
    🕒 Waktu sekarang: ${currentTime}
-   👤 Nama: ${name || 'Taylors'}
+   👤 Nama: ${name || 'Taylor'}
    🏷️ Tag: @${jid.split('@')[0]}
    ⏱️ Kecepatan ping: ${pingStart - new Date()}ms
    📅 Tanggal: ${currentTime.toDateString()}
    🕰️ Jam: ${currentTime.toLocaleTimeString()}
    📅 Hari: ${currentTime.toLocaleDateString('en-US', { weekday: 'long' })}
-   📝 Deskripsi: *Bot ${name || 'Taylors'} sudah aktif*.
+   📝 Deskripsi: *Bot ${name || 'Taylor'} sudah aktif*.
         `;
         conn.sendMessage(nomorown + "@s.whatsapp.net", {
             text: infoMsg,

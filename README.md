@@ -247,4 +247,4 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 * [`All Creator Bot`](https://github.com/AyGemuy/Taylor)
 
 ## ```Recode By 💌```
-[![Taylor](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=500&mask=circle)](https://github.com/AyGemuy)
+[![Taylor](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=100&mask=circle)](https://github.com/AyGemuy)

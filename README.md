@@ -1,6 +1,6 @@
 
 <p align="center">
-[![AyGemuy](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=500&w=300&h=300&fit=cover&mask=circle)](https://github.com/AyGemuy/Taylor)
+[![AyGemuy](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=200&w=300&h=300&fit=cover&mask=circle)](https://github.com/AyGemuy)
 
 </p>
 <h1 align="center">Taylor</h1>
@@ -247,4 +247,4 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 * [`All Creator Bot`](https://github.com/AyGemuy/Taylor)
 
 ## ```Recode By 💌```
-[![Taylor](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=100&w=300&h=300&fit=cover&mask=circle)](https://github.com/AyGemuy)
+[![Taylor](https://wsrv.nl/?url=https://github.com/AyGemuy.png?size=50&w=300&h=300&fit=cover&mask=circle)](https://github.com/AyGemuy)

@@ -1,4 +1,4 @@
-import Acytoo from '../lib/Acytoo.js';
+import Acytoo from '../lib/acytoo.js';
 const model = 'gpt-3.5-turbo';
 const getAcytooResponse = async (messages, proxy) => {
   

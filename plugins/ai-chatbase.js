@@ -1,4 +1,4 @@
-import ChatBase from '../lib/chatbes.js';
+import ChatBase from '../lib/chatbase.js';
 
 const model = 'gpt-4';
 

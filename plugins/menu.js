@@ -95,6 +95,7 @@ let handler = async (m, {
         "sticker": "Sticker",
         "edukasi": "Edukasi",
         "quran": "Al Quran",
+        "ai": "AI",
         "tools": "Tools",
         "kerang": "Kerang Ajaib",
         "primbon": "Primbon",

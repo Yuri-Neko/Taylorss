@@ -19,13 +19,13 @@ let handler = async (m, {
     let image = await uploadImage(data)
     let anime
     try {
-        anime = await ToAnime("xzn", image)
+        anime = await ToAnime("caliph", image)
     } catch (e) {
         try {
             anime = await ToAnime("zahwazein", image)
         } catch (e) {
             try {
-                anime = await ToAnime("caliph", image)
+                anime = await ToAnime("xzn", image)
             } catch (e) {
                 await m.reply(eror)
             }

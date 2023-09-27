@@ -1,4 +1,4 @@
-import translate from "@vitalets/google-translate-api"
+import { translate } from '@vitalets/google-translate-api'
 
 let handler = async (m, {
     args,
@@ -18,7 +18,7 @@ let handler = async (m, {
         }).catch(_ => null)
         if (!res) throw "Error : Bahasa *" + lang + "* Tidak Support"
 
-        let Detect = (res.from.language.iso.toUpperCase() ? res.from.language.iso.toUpperCase() : "US")
+        let Detect = (res.raw.src.toUpperCase() ? res.raw.src.toUpperCase() : "US")
         let ToLang = (lang.toUpperCase())
         let caption = `*[ Terdeteksi ]*
 - ${Detect}

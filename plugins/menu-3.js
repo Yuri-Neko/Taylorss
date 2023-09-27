@@ -74,7 +74,7 @@ let handler = async (m, {
     })
     let tags
     let teks = `${args[0]}`.toLowerCase()
-    let arrayMenu = ["all", "absen", "admin", "advanced", "anonymous", "audio", "Baileys", "database", "downloader", "edukasi", "fun", "game", "genshin", "group", "host", "info", "internet", "jadian", "jadibot", "kerang", "main", "maker", "music", "nocategory", "nsfw", "nulis", "owner", "premium", "primbon", "quotes", "quran", "random", "rpg", "sticker", "tools", "vote", "xp", "store", "virus", "thnks"]
+    let arrayMenu = ["all", "absen", "admin", "advanced", "anonymous", "ai", "audio", "Baileys", "database", "downloader", "edukasi", "fun", "game", "genshin", "group", "host", "info", "internet", "jadian", "jadibot", "kerang", "main", "maker", "music", "nocategory", "nsfw", "nulis", "owner", "premium", "primbon", "quotes", "quran", "random", "rpg", "sticker", "tools", "vote", "xp", "store", "virus", "thnks"]
     if (!arrayMenu.includes(teks)) teks = "404"
     if (teks == "all") tags = {
         "main": "Main",
@@ -84,6 +84,7 @@ let handler = async (m, {
         "sticker": "Sticker",
         "edukasi": "Edukasi",
         "quran": "Al Quran",
+        "ai": "AI",
         "tools": "Tools",
         "kerang": "Kerang Ajaib",
         "primbon": "Primbon",
@@ -203,6 +204,9 @@ let handler = async (m, {
     }
     if (teks == "quran") tags = {
         "quran": "Al Quran"
+    }
+    if (teks == "ai") tags = {
+        "ai": "AI"
     }
     if (teks == "random") tags = {
         "random": "Random"
@@ -527,6 +531,11 @@ let handler = async (m, {
                 {
                     title: ++index + "." + spas + "🕋 Quran Menu".toUpperCase(),
                     rowId: _p + "menulist quran",
+                    description: spas + spas2 + mojis + ktx
+                },
+                {
+                    title: ++index + "." + spas + "🪄 AI Menu".toUpperCase(),
+                    rowId: _p + "menulist ai",
                     description: spas + spas2 + mojis + ktx
                 },
                 {

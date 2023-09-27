@@ -8,6 +8,7 @@ let handler = async (m, { conn, args }) => {
         { name: 'GuideGeek', jid: '12058922070@s.whatsapp.net' },
         { name: 'Jinni', jid: '447457403599@s.whatsapp.net' },
         { name: 'Santa Claus', jid: '15855398883@s.whatsapp.net' },
+        { name: 'Rose', jid: '6281278380339@s.whatsapp.net' },
     ];
     let id = m.chat;
 

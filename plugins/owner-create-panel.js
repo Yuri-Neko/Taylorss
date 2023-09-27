@@ -1,14 +1,3 @@
-/*
-
-
-# Update By LyeeHost Offc
-# Whatsapp : 089520121054
-# Youtube : LyeeHost Official
-# Instagram : @lyeexganxstore
-
-
-*/
-
 import fetch from "node-fetch";
 import crypto from "crypto";
 import { sizeFormatter } from "human-readable";
@@ -17,11 +6,11 @@ const format = sizeFormatter()
 let handler = async (m, { conn, args, text, usedPrefix: _p, command, isROwner }) => {
     
     //Manage panel
-    const domain = "https://vip.gilzzxd.com"
-const apikey = "ptla_QAExbyHmPK8qfZauvZj7RnI8dAQIlhphngo9xPivvnn"
-const c_apikey = "ptla_QAExbyHmPK8qfZauvZj7RnI8dAQIlhphngo9xPivvnn"
+    const domain = "http://43.133.156.76" // Domain
+const apikey = "ptla_gyH0Dtbew65OealnuYGURRs77z0Y5Yz5I4WYxISMO1a" // Apikey
+const c_apikey = "ptlc_pDEHGmUXUHxY1FKoh5pVd62a9nAK3VTcZk9fBCopD3y" // c Apikey
 
-    const webPage = "https://joy.link/lyeepanel"
+    const webPage = "http://43.133.156.76" // Web Page
     
     
     switch (command) {
@@ -49,12 +38,12 @@ const c_apikey = "ptla_QAExbyHmPK8qfZauvZj7RnI8dAQIlhphngo9xPivvnn"
                     "Authorization": "Bearer " + apikey
                 },
                 "body": JSON.stringify({
-                    "email": "admin" + profil.toString() + "@lyeehost.xyz",
-                    "username": "lyeehost" + profil.toString(),
-                    "first_name": "lyeehost" + profil.toString(),
-                    "last_name": "LyeeHost Offc",
-                    "language": "en",
-                    "password": "lyeehost" + password.toString()
+                    "email": "anu" + profil.toString() + "@gmail.com", // Email
+                    "username": "anu" + profil.toString(), // Username
+                    "first_name": "anu" + profil.toString(), // Nama Depan
+                    "last_name": "anu", // Nama Belakang
+                    "language": "en", // Bahasa
+                    "password": "hehe" + password.toString() // Password
                 })
             })
             let data = await f.json();
@@ -62,47 +51,44 @@ const c_apikey = "ptla_QAExbyHmPK8qfZauvZj7RnI8dAQIlhphngo9xPivvnn"
             let user = data.attributes
 
             let p = await conn.reply(m.chat, `
-*===[ SUKSES MEMBUAT PANEL ]===*
+*===[ Sukses Membuat Akun ]===*
 
-📡ID: ${user.id}
-👤USERNAME: ${user.username}
-📃BUATAN: ${user.last_name}
-✅AKUN DIKIRIM : @${u.split`@`[0]}`, m, { mentions: [u] })
+Id: ${user.id}
+Username: ${user.username}
+Detail Dikirim Ke : @${u.split`@`[0]}`, m, { mentions: [u] })
            
             await conn.sendMessage(u, {
-                text: `*===[ PESANAN PANEL ANDA ]===*\n
-📡ID: ${user.id}                
-👤USERNAME: ${user.username}
-🔐PASSWORD: lyeehost${password}
-🖥️LOGIN: ${webPage}
-✅TUTORIAL : https://bit.ly/Tutorial-Panel
-⛔EXPIRED : 1 Bulan
+                text: `*===[ Pesanan Panel ]===*\n
+Id: ${user.id}                
+Username: ${user.username}
+Password: hehe${password}
+Login: ${webPage}
+Aktif : 1 Bulan
 `,})
 
              conn.sendMessage(dms, {
-                text: `*===[ PESANAN PANEL ]===*\n
-👤AKUN PUNYA : @${u.split`@`[0]} 
-📡ID: ${user.id}
+                text: `*===[ Pesanan Panel ]===*\n
+Akun Punya : @${u.split`@`[0]} 
+Id: ${user.id}
 
-📬EMAIL: ${user.email}
-🖥️USERNAME: ${user.username}
-🔐PASSWORD: lyeehost${password}
-📃DIBUAT: ${user.created_at}
+Email: ${user.email}
+Username: ${user.username}
+Password: ${password}
+Dibuat: ${user.created_at}
 `,})
 
 
             conn.sendMessage(u, {
-                text: `*===[ PERINGATAN ]===*\n
-Gunakan dengan sebaik mungkin, simpan informasi akun karna jika hilang maka bukan tanggung jawab kami!
+                text: `*===[ Peringatan ]===*\n
+Gunakan Dengan Sebaik Mungkin, Simpan Informasi Akun Karna Jika Hilang Maka Bukan Tanggung Jawab Kami!
 
-⛔Dilarang menjual kembali
-⛔Dilarang menyebarkan akun karna
-⛔Dilarang menggunakan berlebihan
-⛔Jika terjadi error segera komplain
+- Dilarang Menjual Kembali
+- Dilarang Menyebarkan Akun
+- Dilarang Menggunakan Berlebihan
+- Jika Terjadi Error Segera Lapor
 
-✅Garansi 5Hari
-✅Admin : 089520121054
-✅Toko : LyeeHost Store`,})
+- Garansi 5Hari
+-Admin : 085760451683`,})
         }
             break
         case "delusr": {
@@ -121,58 +107,8 @@ Gunakan dengan sebaik mungkin, simpan informasi akun karna jika hilang maka buka
             let res = f.ok ? {
                 errors: null
             } : await f.json()
-            if (res.errors) return m.reply("*USER TIDAK TERDAFTAR*")
-            m.reply("*SUKSES MENGHAPUS USER TERSEBUT*")
-        }
-            break
-        case "listusr": {
-            let page = args[0] ? args[0] : "1"
-            let f = await fetch(domain + "/api/application/users?page=" + page, {
-                "method": "GET",
-                "headers": {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json",
-                    "Authorization": "Bearer " + apikey
-                }
-            })
-            let res = await f.json();
-            let users = res.data
-            let sections = []
-            for (let user of users) {
-                let u = user.attributes
-                let obj = {
-                    title: "-- DPANEL HOST --",
-                    rows: [
-                        { title: `${u.id}. ${u.username}`, rowId: `${_p}detusr ` + u.id, description: u.first_name + " " + u.last_name },
-                    ]
-                }
-                await sections.push(obj)
-                if (sections.length === 50) {
-                    sections.push({
-                        title: "-- PANEL --",
-                        rows: [
-                            { title: `⏩ NEXT`, rowId: `${_p}listusr 2`, description: "Page 2" },
-                        ]
-                    })
-                }
-            }
-            /*
-            await conn.sendMessage(m.chat, {
-                text: "Berikut list user *PANEL*",
-                footer: `Page: ${res.meta.pagination.current_page}/${res.meta.pagination.total_pages}`,
-                title: "*PANEL*",
-                buttonText: `${res.meta.pagination.count} Users`,
-                sections
-            })
-            */
-            let teks = sections.map((item, index) => {
-                    return `🔍 *[ RESULT ${index + 1} ]*
-
-📰 *Title:* ${item.rows[0].title}
-📝 *Description:* ${item.rows[0].description}
-`
-                }).filter(v => v).join("\n\n________________________\n\n")
-                await m.reply(teks)
+            if (res.errors) return m.reply("*User Tidak Terdaftar*")
+            m.reply("*Sukses Menghapus User*")
         }
             break
         case "detusr": {
@@ -186,18 +122,18 @@ Gunakan dengan sebaik mungkin, simpan informasi akun karna jika hilang maka buka
                 }
             })
             let res = await f.json()
-            if (res.errors) return m.reply("*USER NOT FOUND*")
+            if (res.errors) return m.reply("*User Tidak Ada*")
             let u = res.attributes
-            m.reply(`*${u.username.toUpperCase()} USER DETAILS*
+            m.reply(`*${u.username.toUpperCase()} Detail User*
 
 \`\`\`ID: ${u.id}
 UUID: ${u.uuid}
-USERNAME: ${u.username}
-EMAIL: ${u.email}
-NAME: ${u.first_name} ${u.last_name}
-LANGUAGE: ${u.language}
-ADMIN: ${u.root_admin}
-CREATED AT: ${u.created_at}\`\`\``)
+Username: ${u.username}
+Email: ${u.email}
+Name: ${u.first_name} ${u.last_name}
+Language: ${u.language}
+Admin: ${u.root_admin}
+Dibuat: ${u.created_at}\`\`\``)
         }
             break
         case "addsrv": {
@@ -213,7 +149,7 @@ ${_p + command} name,desc,userId,eggId,locId,memory/disk,cpu`)
             let memo_disk = s[5].split`/`;
             let cpu = s[6];
 
-            let f1 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
+            let f1 = await fetch(domain + "/api/application/nests/6/eggs/" + egg, {
                 "method": "GET",
                 "headers": {
                     "Accept": "application/json",
@@ -223,7 +159,7 @@ ${_p + command} name,desc,userId,eggId,locId,memory/disk,cpu`)
             })
             let data = await f1.json();
             //console.log(data.attributes.startup)
-            let startup_cmd = data.attributes.startup
+            let startup_cmd = "${CMD_RUN}"
 
             let f = await fetch(domain + "/api/application/servers", {
                 "method": "POST",
@@ -243,7 +179,7 @@ ${_p + command} name,desc,userId,eggId,locId,memory/disk,cpu`)
                         "INST": "npm",
                         "USER_UPLOAD": "0",
                         "AUTO_UPDATE": "0",
-                        "CMD_RUN": "index.js"
+                        "CMD_RUN": "node index.js"
                     },
                     "limits": {
                         "memory": memo_disk[0],
@@ -270,17 +206,17 @@ ${_p + command} name,desc,userId,eggId,locId,memory/disk,cpu`)
             let res = await f.json()
             if (res.errors) return m.reply(JSON.stringify(res.errors[0], null, 2))
             let server = res.attributes
-            m.reply(`*== [ SUKSES MEMBUAT SERVER ] ==*
+            m.reply(`*== [ Info Server Dibuat ] ==*
 
-🖥TYPE: ${res.object}
-📦ID: ${server.id}
-👤NAME: ${server.name}
-📄DESCRIPTION: ${server.description}
-💾MEMORY: ${server.limits.memory === 0 ? "Unlimited" : server.limits.memory} MB
-🗄️DISK: ${server.limits.disk === 0 ? "Unlimited" : server.limits.disk} MB
-📈CPU: ${server.limits.cpu}%
-📅CREATED AT: ${server.created_at}
-⛔EXPIRED : 1 Bulan`)
+Type: ${res.object}
+ID: ${server.id}
+Name: ${server.name}
+Description: ${server.description}
+Memory: ${server.limits.memory === 0 ? "Unlimited" : server.limits.memory} Mb
+Disk: ${server.limits.disk === 0 ? "Unlimited" : server.limits.disk} Mb
+Cpu: ${server.limits.cpu}%
+Dibuat: ${server.created_at}
+Expired: 1 Bulan`)
         }
             break
         case "delsrv": {
@@ -298,67 +234,8 @@ ${_p + command} name,desc,userId,eggId,locId,memory/disk,cpu`)
             let res = f.ok ? {
                 errors: null
             } : await f.json()
-            if (res.errors) return m.reply("*SERVER NOT FOUND*")
-            m.reply("*SUCCESSFULLY DELETE THE SERVER*")
-        }
-            break
-        case "listsrv": {
-            let page = args[0] ? args[0] : "1"
-            let f = await fetch(domain + "/api/application/servers?page=" + page, {
-                "method": "GET",
-                "headers": {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json",
-                    "Authorization": "Bearer " + apikey
-                }
-            })
-            let res = await f.json();
-            let servers = res.data
-            let sections = []
-            for (let server of servers) {
-                let s = server.attributes
-                let f3 = await fetch(domain + "/api/client/servers/" + s.uuid.split`-`[0] + "/resources", {
-                    "method": "GET",
-                    "headers": {
-                        "Accept": "application/json",
-                        "Content-Type": "application/json",
-                        "Authorization": "Bearer " + c_apikey
-                    }
-                })
-                let data = await f3.json();
-                let obj = {
-                    title: "-- PANEL --",
-                    rows: [
-                        { title: `${s.id}. ${s.name}`, rowId: `${_p}detsrv ` + s.id, description: `Status: ${data.attributes ? data.attributes.current_state : s.status}` },
-                    ]
-                }
-                await sections.push(obj)
-                if (sections.length >= 50 && res.meta.pagination.links.next) {
-                    sections.push({
-                        title: "-- PANEL --",
-                        rows: [
-                            { title: `⏩ NEXT`, rowId: `${_p}listsrv 2`, description: "Page 2" },
-                        ]
-                    })
-                }
-            }
-            /*
-            await conn.sendMessage(m.chat, {
-                text: "Berikut list server *PANEL*",
-                footer: `Page: ${res.meta.pagination.current_page}/${res.meta.pagination.total_pages}`,
-                title: "*PANEL*",
-                buttonText: `${res.meta.pagination.count} Servers`,
-                sections
-            }, { quoted: m })
-            */
-            let teks = sections.map((item, index) => {
-                    return `🔍 *[ RESULT ${index + 1} ]*
-
-📰 *Title:* ${item.rows[0].title}
-📝 *Description:* ${item.rows[0].description}
-`
-                }).filter(v => v).join("\n\n________________________\n\n")
-                await m.reply(teks)
+            if (res.errors) return m.reply("*Server Tidak Ditemukan*")
+            m.reply("*Sukses Menghapus Server*")
         }
             break
         case "detsrv": {
@@ -372,7 +249,7 @@ ${_p + command} name,desc,userId,eggId,locId,memory/disk,cpu`)
                 }
             })
             let res = await f.json();
-            if (res.errors) return m.reply("*SERVER NOT FOUND*")
+            if (res.errors) return m.reply("*Server Tidak Ditemukan*")
             let s = res.attributes
             let f2 = await fetch(domain + "/api/client/servers/" + s.uuid.split`-`[0] + "/resources", {
                 "method": "GET",
@@ -384,37 +261,18 @@ ${_p + command} name,desc,userId,eggId,locId,memory/disk,cpu`)
             })
             let data = await f2.json();
             let t = data.attributes
-            m.reply(`*${s.name.toUpperCase()} SERVER DETAILS*
+            m.reply(`*${s.name.toUpperCase()} Detail Server*
 
-\`\`\`STATUS: ${t.current_state}
+\`\`\`Status: ${t.current_state}
 
 ID: ${s.id}
 UUID: ${s.uuid}
-NAME: ${s.name}
-DESCRIPTION: ${s.description}
-MEMORY: ${await (format(t.resources.memory_bytes)).toString()} / ${s.limits.memory === 0 ? "Unlimited" : s.limits.memory + "MB"}
-DISK: ${await (format(t.resources.disk_bytes)).toString()} / ${s.limits.disk === 0 ? "Unlimited" : s.limits.disk + "MB"}
-CPU: ${t.resources.cpu_absolute}% / ${s.limits.cpu === 0 ? "Unlimited" : s.limits.cpu + "%"}
-CREATED AT: ${s.created_at}\`\`\``)
-        }
-            break
-        case "reinstall": {
-            if (!isROwner) return global.dfail("rowner", m, conn)
-            let srv = args[0]
-            if (!srv) return m.reply("ID nya mana?")
-            let f = await fetch(domain + "/api/application/servers/" + srv + "/reinstall", {
-                "method": "POST",
-                "headers": {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json",
-                    "Authorization": "Bearer " + apikey
-                }
-            })
-            let res = f.ok ? {
-                errors: null
-            } : await f.json()
-            if (res.errors) return m.reply("*SERVER NOT FOUND*")
-            m.reply("*REINSTALLING THE SERVER..*")
+Name: ${s.name}
+Desc: ${s.description}
+Memory: ${await (format(t.resources.memory_bytes)).toString()} / ${s.limits.memory === 0 ? "Unlimited" : s.limits.memory + "Mb"}
+Disk: ${await (format(t.resources.disk_bytes)).toString()} / ${s.limits.disk === 0 ? "Unlimited" : s.limits.disk + "Mb"}
+Cpu: ${t.resources.cpu_absolute}% / ${s.limits.cpu === 0 ? "Unlimited" : s.limits.cpu + "%"}
+Dibuat: ${s.created_at}\`\`\``)
         }
             break
         case "updatesrv": {
@@ -461,19 +319,19 @@ ${_p + command} srvId,locId,memory/disk,cpu`)
             let res = await f.json()
             if (res.errors) return m.reply(JSON.stringify(res.errors[0], null, 2))
             let server = res.attributes
-            m.reply(`*SUCCESSFULLY UPDATED THE SERVER*
+            m.reply(`*Update Server Info*
 
-TYPE: ${res.object}
+Type: ${res.object}
 
 ID: ${server.id}
 UUID: ${server.uuid}
-NAME: ${server.name}
-DESCRIPTION: ${server.description}
-MEMORY: ${server.limits.memory === 0 ? "Unlimited" : server.limits.memory} MB
-DISK: ${server.limits.disk === 0 ? "Unlimited" : server.limits.disk} MB
-CPU: ${server.limits.cpu}%
-CREATED AT: ${server.created_at}
-UPDATED AT: ${server.updated_at}`)
+Name: ${server.name}
+Desc: ${server.description}
+Memory: ${server.limits.memory === 0 ? "Unlimited" : server.limits.memory} Mb
+Disk: ${server.limits.disk === 0 ? "Unlimited" : server.limits.disk} Mb
+Cpu: ${server.limits.cpu}%
+Dibuat: ${server.created_at}
+Diupdate: ${server.updated_at}`)
         }
             break
         case "startsrv": case "stopsrv": case "restartsrv": {
@@ -497,34 +355,13 @@ UPDATED AT: ${server.updated_at}`)
                 errors: null
             } : await f.json()
             if (res.errors) return m.reply(JSON.stringify(res.errors[0], null, 2))
-            m.reply(`*SUCCESSFULLY ${action.toUpperCase()} THE SERVER*`)
+            m.reply(`*Sukses ${action.toUpperCase()} THE SERVER*`)
         }
     }
 }
 
 handler.help = ["addusr", "delusr", "listusr", "detusr", "addsrv", "delsrv", "listsrv", "detsrv", "reinstall", "updatesrv", "startsrv", "stopsrv", "restartsrv"];
 handler.command = ["addusr", "delusr", "listusr", "detusr", "addsrv", "delsrv", "listsrv", "detsrv", "reinstall", "updatesrv", "startsrv", "stopsrv", "restartsrv"];
-handler.tags = ["panel", "host"]
-
+handler.tags = ["owner"]
+handler.owner = true
 export default handler
-
-
-/*
-//SYSTEM
-
-
-
-UUID: ${user.uuid}
-LANGUAGE: ${user.language}
-ADMIN: ${user.root_admin}
-CREATED AT: ${user.created_at}
-LOGIN: ${domain}
-
-
-
-
-
-
-
-
-*/

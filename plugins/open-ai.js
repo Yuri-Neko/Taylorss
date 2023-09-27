@@ -153,13 +153,13 @@ let handler = async (m, {
             if (Buffer.byteLength(anu) < 22000) throw Error(`[!] Error : Buffer not found.`)
             await conn.sendMessage(m.chat, {
                 image: anu,
-                caption: "*[ Lolhuman AI Dall E ]*\n*Text:*" + text
+                caption: "*[ Lolhuman AI Dall E ]*\n*Text:* " + text
             }, {
                 quoted: m
             })
         } catch (e) {
             let url = "https://dalle-mini.amasad.repl.co/gen/" + encodeURIComponent(text)
-            await conn.sendButton(m.chat, author, "*[ Dall E Mini ]*\n*Text:*" + text, url, [
+            await conn.sendButton(m.chat, author, "*[ Dall E Mini ]*\n*Text:* " + text, url, [
                 [emojis + " M E N U", ".menulist"]
             ], m)
         }

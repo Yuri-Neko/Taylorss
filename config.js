@@ -28,6 +28,8 @@ global.APIs = {
     neoxr: "https://api.neoxr.my.id",
     pencarikode: "https://pencarikode.xyz",
     xteam: "https://api.xteam.xyz",
+    xyro: "https://api.xyroinee.xyz",
+    rose: "https://api.itsrose.life",
     zeks: "https://api.zeks.xyz",
     zenz: "https://api.zahwazein.xyz",
     btchx: "https://api.botcahx.biz.id"
@@ -36,8 +38,10 @@ global.APIs = {
 /*Apikey*/
 global.APIKeys = {
     "https://api.neoxr.my.id": "5VC9rvNx",
-    "https://api.lolhuman.xyz": pickRandom(["043c5de3b7cd6b1b8f2a0f90", "e1a815979e6adfc071b7eafc", "ed78c137a46873c5b8e5fe3b", "SGWN"]),
+    "https://api.lolhuman.xyz": pickRandom(["043c5de3b7cd6b1b8f2a0f90", "e1a815979e6adfc071b7eafc", "ed78c137a46873c5b8e5fe3b", "IchanZX"]),
     "https://api.xteam.xyz": "HIRO",
+    "https://api.xyroinee.xyz": "yqiBQF86F4",
+    "https://api.itsrose.life": "5ce139e1d4b3",
     "https://api.zeks.xyz": "apivinz",
     "https://hardianto.xyz": "hardianto",
     "https://melcanz.com": "manHkmst",
@@ -47,11 +51,14 @@ global.APIKeys = {
 }
 
 /*Lolhuman*/
-global.lolkey = pickRandom(["043c5de3b7cd6b1b8f2a0f90", "e1a815979e6adfc071b7eafc", "ed78c137a46873c5b8e5fe3b", "BrunoSobrino_2"])
+global.lolkey = pickRandom(["043c5de3b7cd6b1b8f2a0f90", "e1a815979e6adfc071b7eafc", "ed78c137a46873c5b8e5fe3b", "IchanZX"])
 /*OpenAi*/
 global.openaikey = "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"
 /*AmeApi*/
 global.ameapikey = "1f98ec7e4842d057d7551722f83e9ae5c59896856aa3f96d406ff8fc9185752062920fadf1df1ea71c332d3f6be2dd6fa62b7ac3d0140e40d86ba0e736135820"
+/*XyroineeApi*/
+global.xyro = "yqiBQF86F4"
+global.rose = "Rk-b46ed28219342e1606bb14b8_free_tier"
 
 /*Number*/
 global.nomorbot = "6285171216276"
